@@ -1,0 +1,87 @@
+/* Footer.css */
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #000000;
+  padding: 60px;
+  color: #ffffff;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-bottom: 15px;
+  overflow: hidden; /* Add overflow hidden to prevent content overflow */
+}
+
+.new-button {
+  background-color: #F2F4F7;
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  color: #000000; /* Add text color to the button */
+  border: none;
+}
+
+.paragraph-col {
+  width: 400px;
+}
+
+.footer-column p {
+  color: #ffffff;
+  line-height: 1.5;
+  max-height: 6em; /* Adjust the max height to accommodate three lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10; /* Reset margin for better consistency */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column p {
+  font-size: 18px;
+}
+
+.footer-column ul {
+  font-size: 14px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Change flex direction to column for small screens */
+    align-items: center; /* Center align items for better display on small screens */
+  }
+
+  .footer-column {
+    flex: 1; /* Adjust flex properties for better responsiveness */
+    margin: 10px 0; /* Add margin for better spacing between columns */
+  }
+
+  .paragraph-col {
+    width: auto; /* Adjust width for better responsiveness */
+  }
+}
+
+/* Additional Media Query for aligning all items in line */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: row; /* Align all items in line for landscape orientation */
+    justify-content: space-around; /* Adjust justification for better spacing */
+    align-items: center; /* Center align items */
+  }
+
+  .footer-column {
+    margin: 0 10px; /* Adjust margin for better spacing between columns */
+  }
+}

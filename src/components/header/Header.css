@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.nav-link {
+    color: white;
+    color: white !important;
+    text-align: center; 
+    /* margin-bottom: 10px; */
+    font-size: 13px; /* Adjust the font size for smaller screens */
+    transition: color 0.3s; /* Add a smooth transition effect for color changes */
+}
+
+.nav-link.active {
+    color: #12B1BE;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    width: auto;
+}
+
+.home:active {
+    color: #12B1BE !important;
+}
+
+.sortbox-btn {
+    background-color: #12B1BE;
+    border-radius: 27px;
+    padding: 10px 16px;
+    color: white;
+    font-weight: 500;
+    border: black;
+    margin-right: 0;
+}
+
+.sortbox-btn:hover {
+    background-color: #12B1BE;
+    transform: scale(1.05);
+    border-radius: 27px;
+}
+.sortbox-btn:focus {
+    outline: none;
+}
+
+.login-logo-container {
+    border-radius: 50%;
+    margin-right:20px;   
+    margin-left: 0;
+}
+  
+  .login-logo {
+    max-height: 30px;
+    margin-left: 0;
+  }
+
+.navbar-light .navbar-nav .nav-item.dropdown .nav-link {
+    color: white !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-brand img {
+        max-height: 60px; /* Adjust the max height for smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-bottom: 0px;
+        color: white;
+        font-size: 12px; /* Decrease the font size for smaller screens */
+        text-align: center; /* Align text in the center */
+    }
+
+    .sortbox-btn {
+        margin: 5px 0;
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .login-logo-container {
+        margin-right: 5px; /* Adjust margin for smaller screens */
+    }
+
+}

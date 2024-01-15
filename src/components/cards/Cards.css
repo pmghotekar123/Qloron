@@ -1,0 +1,104 @@
+/* CardPage.css */
+.card-grid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0; /* Add a default grid-gap for all screens */
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.card-img-top {
+  max-height: 100%;
+  width: 100%; /* Adjust the percentage to your preference */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover;
+}
+.card-title {
+  font-size: 16px; /* Adjust the font size to your preference */
+}
+
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    grid-gap: 0; /* Adjust grid-gap for smaller screens */
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 15px;
+    margin: 0; /* Adjust margin for medium screens */
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Media Query for laptop screens */
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0; /* Adjust margin for medium screens */
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Media Query for laptop screens */
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.button-read-more {
+  background-color: #12b1be;
+  border-color: #12b1be;
+  margin-top: 10px;
+  width: 100%
+}
+
+.button-read-more:hover {
+  background-color: #0a7d8c;
+  border-color: #0a7d8c;
+}

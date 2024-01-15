@@ -1,0 +1,68 @@
+.sec7-container {
+    background: url("../../assets/worldmap.jpg");
+    background-position: center;
+    height: 587px;
+    max-height: 587px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec7-div1 {
+    text-align: center;
+    width: 60%;
+    font-size: 2em;
+    /* padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.sec7-heading {
+    font-size: 1em; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add some margin for spacing */
+  }
+
+.sec7-div1-btn {
+    background-color: #26D6EB;
+    color: white;
+    border: none;
+    Width: 286.47px;
+    Height: 46.73px;
+    border-radius: 4.56px;
+    Padding: 12.54px, 18.24px, 12.54px, 18.24px;
+    Gap: 11.4px;
+    font-weight: 600;
+    font-size: 18.24px;
+    line-height: 22.07px;
+    margin-top: 20px;
+}
+
+.sec7-div2{
+    width: 100%;
+}
+
+.sec7-slider-img{
+    width: 150px;
+    height: auto;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 767px) {
+    .sec7-div1 {
+        width: 90%; /* Adjust as needed for smaller screens */
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .sec7-heading {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .sec7-div1-btn {
+        width: 100%;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

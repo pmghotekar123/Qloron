@@ -1,0 +1,135 @@
+.sec5-card {
+    border: none;
+    box-shadow: none;
+    /* top: 110px; */
+    margin-top: 30px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* Adjusted for smaller screens */
+}
+
+.sec5-card-head {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+.sec5-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+.sec5-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.sec5-inner-right {
+    width: 80%;
+    height: 50%;
+    /* background-color: red; */
+    /* margin-top: 70px; */
+    padding: 10% 0;
+    /* margin-top: 50px; */
+    /* gap: 23px; */
+    /* margin-left: 70px; */
+}
+
+.sec5-left,
+.sec5-right {
+    text-align: center;
+    flex: 1;
+}
+
+.sec5-img {
+    width: 100%;
+    /* Adjusted width for responsiveness */
+    height: auto;
+    /* Adjusted height for responsiveness */
+    border-radius: 3px;
+    background-position: center;
+
+}
+
+.sec5-btn {
+    background-color: #26D6EB;
+    width: 100%;
+    /* Adjusted to take full width */
+    height: 43.22px;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-top: 20px;
+    /* Add margin for spacing between the divs */
+    border: none;
+    color: white;
+}
+.sec5-content {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .sec5-btn {
+    background-color: #26D6EB;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sec5-btn:hover {
+    background-color: #1a8f9e;
+  }
+  
+
+
+/* Add media query for larger screens */
+@media (min-width: 768px) {
+    .sec5-div {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        /* Add space between divs */
+    }
+
+    .sec5-left,
+    .sec5-right {
+        flex: 1;
+        text-align: left;
+        margin: 0 10px;
+        /* Add margin between the divs */
+    }
+
+    .sec5-btn {
+        width: auto;
+        /* Adjusted to take content width */
+    }
+    
+    
+}
+
+/* Add media query for small screens */
+@media (max-width: 767px) {
+    .sec5-card-head {
+        font-size: 1.4em; /* Adjust font size for smaller screens */
+    }
+
+    .sec5-div {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    .sec5-btn {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+}
